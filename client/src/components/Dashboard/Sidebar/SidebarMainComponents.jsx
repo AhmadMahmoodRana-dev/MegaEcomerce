@@ -1,10 +1,7 @@
-
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { createContext, useContext, useState } from "react";
 import { CgMoreVertical } from "react-icons/cg";
 import { LuChevronFirst, LuChevronLast } from "react-icons/lu";
-
-
 
 const SidebarContext = createContext(undefined);
 export const Sidebar = ({ children }) => {
@@ -63,14 +60,7 @@ export const Sidebar = ({ children }) => {
   );
 };
 
-
-export const SidebarItem = ({
-  icon,
-  text,
-  active,
-  alert,
-  href
-}) => {
+export const SidebarItem = ({ icon, text, active, alert, href }) => {
   const context = useContext(SidebarContext);
 
   if (!context) {
@@ -82,7 +72,8 @@ export const SidebarItem = ({
   const { expanded } = context;
 
   return (
-    <Link href={href}
+    <Link
+      to={href}
       className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-all duration-300 ${
         active
           ? "bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800"

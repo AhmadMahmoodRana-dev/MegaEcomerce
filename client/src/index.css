@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header{
+    background-image: url("../src/assets/Mask_group.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    /* background-attachment: fixed; */
+}
+.banner-img{
+    background-image: url("../src/assets/banner-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.banner-img-2{
+    background-image: url("../src/assets/banner-image-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.banner-img-3{
+    background-image: url("../src/assets/banner-image-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-img:hover{
+    transform: scale(1.1);
+}
+.banner-img-2:hover{
+    transform: scale(1.1);
+}
+.banner-img-3:hover{
+    transform: scale(1.1);
+}
