@@ -2,7 +2,7 @@ import React from "react";
 
 const Discounts = () => {
   return (
-    <div className="grid grid-cols-3 mb-10 h-[310px]">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:h-[310px] md:h-[500px] grid-cols-1 h-[800px]">
       <div className="overflow-hidden relative bg-black">
         <div className="w-full h-full banner-img overflow-hidden absolute opacity-[.9]"></div>
       </div>
